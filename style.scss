@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.page {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    .header{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .headerImg{
+            width: 80%;
+            height: 90%;
+            background-image: url('./src/mainImg.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+.mainBoxes{
+    width: 100%;
+    min-height:60vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+padding: 0.5em;
+width: 100%;
+margin: 0.5em;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+input{
+max-width: 15rem;
+background-color: rgb(1, 1, 1);
+color: red;
+}
+.box-2 {
+padding: 0.5em;
+width: 95%;
+display: flex;
+justify-content: center;
+}
+
+.options label,
+.options input {
+width: 10em;
+padding: 0.5em 1em;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btn {
+background: white;
+color: black;
+border: 1px solid black;
+padding: 0.5em 1em;
+text-decoration: none;
+margin: 0.8em 0.3em;
+display: inline-block;
+cursor: pointer;
+}
+
+.hide {
+display: none;
+}
+
+img {
+max-width: 100%;
+}
+
+.footer{
+    width: 100%;
+    height: 5em;
+    background-color: #E6F4FF;
+    margin-bottom: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cropper-crop-box{
+    overflow: hidden;
+}
+ .cropper-point{
+    display: none;
+} 
